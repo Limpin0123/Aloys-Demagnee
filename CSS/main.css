@@ -121,6 +121,10 @@ body {
     filter: grayscale(100%);
 }
 
+.header-page-navigation2{
+    display: none;
+}
+
 .vertical-bar{
     width: 2px;
     height: calc(100% - 6px);
@@ -132,50 +136,42 @@ body {
     height: 1.5px;
     width: calc(100% - 6px);
     margin: 5px 3px 5px 3px;
-    background-color: white;
+    background-color: white; 
 }
-
-/*----- Phone screen size addaptation -----*/
-
-.hide-on-phone-size{
-        display: block;
-    }
-    .show-on-phone-size{
-        display: none;
-    }
 
 @media (max-width: 600px){
     .header-main{
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items:  flex-start;
         justify-content: space-between;
     }
 
-    .logo-title-section {
-        order: 1;
-    }
-
-    .header-main-sm {
-        order: 2;
-        background-color: #131216;
-    }
-
     .header-page-navigation{
-        order: 3;
-        min-width: 100%;
-
-        flex-flow: column;
-
-        height: 30px;
-        background-color: #131216;
-        margin: 0px;
-    }
-
-    .hide-on-phone-size{
         display: none;
     }
-    .show-on-phone-size{
-        display: block;
+
+    .header-page-navigation2{
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+
+        background-color: #131216;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .header-page-navigation2 ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .header-page-navigation2 ul li a{
+        float: left;
+        padding: 0 5px 0 5px ;
+
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
     }
 }
