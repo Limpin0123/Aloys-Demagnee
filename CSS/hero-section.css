@@ -63,6 +63,7 @@ main .hero-section-presentation{
     position: relative;
     right: 180px;
     margin-bottom: 150px;
+    margin-top: 50px;
 }
 main .hero-section-quotations{
     position: relative;
@@ -89,6 +90,7 @@ main .hero-section-quotations div{
 
         background-image: url(../img/Aloys-Demagnee-no-motif-back-shadow.png), url(../img/background.png);
         background-size: calc((90vh - clamp(40px, 5vw,60px)) * 0.9) auto, 100% auto;
+        background-position: 60% bottom, center;
 
         display: flex;
         align-items: flex-end;
@@ -130,7 +132,7 @@ main .hero-section-quotations div{
 
 @media only screen and (min-width: 601px) and (max-width: 768px){
     main{
-        height: calc(75vh - clamp(40px, 5vw,60px));
+        height: calc(78vh - clamp(40px, 5vw,60px));
         background-size: calc((70vh - clamp(40px, 5vw,60px)) * 0.9) auto, 100% auto;
         background-position: 35% bottom, center;
     }
@@ -188,7 +190,7 @@ main .hero-section-quotations div{
 
 @media only screen and (min-width: 769px) and (max-width: 992px){
     main{
-        height: calc(70vh - clamp(40px, 5vw,60px));
+        height: calc(73vh - clamp(40px, 5vw,60px));
         background-size: calc((65vh - clamp(40px, 5vw,60px)) * 0.9) auto, 100% auto;
         background-position: 25% bottom, center;
     }
@@ -246,7 +248,7 @@ main .hero-section-quotations div{
 
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     main{
-        height: calc(90vh - clamp(40px, 5vw,60px));
+        height: calc(93vh - clamp(40px, 5vw,60px));
         background-size: calc((85vh - clamp(40px, 5vw,60px)) * 0.9) auto, 100% auto;
         background-position: bottom, center;
     }
