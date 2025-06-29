@@ -1,0 +1,36 @@
+:root{
+    /*----- Colors -----*/
+    --body-background-color: #1e1d20;
+
+    --header-background-color: #131216;
+
+    --text-main-color:white;
+    --text-subtil-color:#cecececc;
+    --text-highlight-color:#9d4bad;
+}
+
+@font-face {
+    font-family: 'Jet Brain Mono';
+    src: url(../Fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+    font-weight: 100 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jet Brain Mono';
+    src: url(../Fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf);
+    font-weight: 100 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubiks';
+    src: url(../Fonts/Rubik/Rubik-VariableFont_wght.ttf);
+    font-weight: 100 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubiks';
+    src: url(../Fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf);
+    font-weight: 300 900;
+    font-style: italic;
+}

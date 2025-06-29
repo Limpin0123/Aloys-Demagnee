@@ -6,8 +6,12 @@
     <title>Aloys Demagnée portfolio</title>
     <!--reset stylesheet-->
     <link rel="stylesheet" href="CSS/reset.css">
+
     <!--custom stylesheet-->
+    <link rel="stylesheet" href="CSS/variables.css">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/hero-section.css">
 </head>
 
 <body>
@@ -19,14 +23,14 @@
                 <section class="title-section">
                     <div class="vertical-bar"></div>
                     <div class="title-text">
-                        <h1>Aloys Demagnée</h1>
+                        <h2 class="important-h2">Aloys Demagnée</h2>
                         <h2>Game Programming</h2>
                     </div>
                 </section>
 
             </section>
 
-            <nav class="header-page-navigation">
+            <nav class="header-page-navigation show-on-pc-layout">
                 <div class="vertical-bar"></div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -43,7 +47,7 @@
             </div>
         </div>
         <!--Ne pas oublier d'update la deuxième navigation barre avec la 1er-->
-        <nav class="header-page-navigation2">
+        <nav class="header-page-navigation show-on-mobile-layout">
                 <div class="horizontale-bar"></div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -52,5 +56,38 @@
                 </ul>
             </nav>  
     </header>
+
+    <main>
+        <div class="hero-section-presentation">
+            <div>
+                <h1>Aloys Demagnée, Game Programming</h1>
+                <p>Bonjour, je m'appelle Aloys Demagnée,
+                    Je suis un Game Programmeur toujours
+                    à la recherche de nouveaux défis.
+                    <br><br>Bienvenue sur mon portfolio !
+                </p>
+            </div>
+        </div>
+
+        <div class="hero-section-quotations">
+            <div class="hero-section-team-work">
+                <div>
+                    <h2>Travail d'équipe</h2>
+                    <p class="p-quotation">«&nbsp;Aucun de nous, en agissant seul, ne peut atteindre le succès&nbsp;»</p>
+                    <p class="p-personnality"><br>—— Nelson Mandela</p>
+                </div>
+            </div>
+
+            <div class="hero-section-methodology">
+
+                <div>
+                    <h2>Méthodologie</h2>
+                    <p class="p-quotation">«&nbsp;La rigueur vient toujours à bout de l’obstacle&nbsp;»</p>
+                    <p class="p-personnality"><br>—— Léonard de Vinci</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
