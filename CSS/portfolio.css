@@ -1,0 +1,139 @@
+.portfolio-container{
+    height: fit-content;
+    width: 100%;
+
+    padding: 3vw 8vw;
+}
+.portfolio-container h2{
+    font-size: 3rem;
+}
+
+.portfolio-projects-section{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-project-box{
+    width: calc(50% - 20px);
+    min-width: 280px;
+    aspect-ratio: 10 / 8;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--portfolio-box-background-color);
+
+    display: flex;
+    flex-direction: column;
+}
+.portfolio-project-box:hover .portfolio-illustration-img{
+    filter: grayscale(0%);
+}
+.portfolio-project-box:hover .portfolio-project-image-section{
+    height: 20%;
+}
+.portfolio-project-box:hover .portfolio-project-info{
+    height: 80%;
+    transition: height 0s ease;
+}
+
+.portfolio-project-image-section{
+    height: 60%;
+    position: relative;
+    transition: height 0.3s ease;
+}
+.portfolio-illustration-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(50%);
+    transition: filter 0.3s ease;
+}
+.portfolio-basic-info{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: row;
+
+}
+.portfolio-basic-info .info-logo{
+    height: calc(100% - 10px);
+    width: auto;
+
+    margin: 5px 5px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.portfolio-basic-info .basic-info-text{
+    height: calc(100% - 10px);
+    width: auto;
+    min-width: fit-content;
+
+    margin: 5px 10px 5px 5px;
+    text-align: center;
+    line-height: 2;
+}
+
+.portfolio-project-info{
+    height: 40%;
+    padding: 10px;
+    position: relative;
+    transition: height 0.3s ease;
+}
+.portfolio-project-info h3{
+    font-size: 3rem;
+}
+.portfolio-project-info p{
+    font-size: 2rem;
+}
+
+.project-box-bottom-gradient{
+    height: 3rem;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(47, 45, 49,0),rgba(47, 45, 49,1));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (max-width:600px){
+    .portfolio-basic-info{
+        height: 25px;
+    }
+    .portfolio-basic-info .basic-info-text{
+        line-height: 1;
+    }
+    .portfolio-project-info h3{
+        font-size: 2rem;
+    }
+    .portfolio-project-info p{
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px){
+    .portfolio-basic-info{
+        height: 35px;
+    }
+    .portfolio-basic-info .basic-info-text{
+        line-height: 1.6;
+    }
+    .portfolio-project-info h3{
+        font-size: 2rem;
+    }
+    .portfolio-project-info p{
+        font-size: 1.4rem;
+    }
+}

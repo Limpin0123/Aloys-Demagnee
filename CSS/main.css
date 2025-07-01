@@ -1,6 +1,7 @@
 /*---------- main ----------*/
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +21,14 @@ h1{
 h2{
     font-size: 2rem;
     line-height: 1.75;
+    color: var(--text-main-color);
+    font-family: "Rubiks", sans-serif;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 1.8rem;
+    line-height: 1.5;
     color: var(--text-main-color);
     font-family: "Rubiks", sans-serif;
     font-weight: 500;

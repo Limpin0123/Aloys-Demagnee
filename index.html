@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/hero-section.css">
     <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="stylesheet" href="CSS/about-me.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                 <div class="vertical-bar"></div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Section 1</a></li>
+                    <li><a href="#Portfolio-section">Portfolio</a></li>
                     <li><a href="#">Section 2</a></li>
                 </ul>
             </nav>        
@@ -52,7 +53,7 @@
                 <div class="horizontale-bar"></div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Section 1</a></li>
+                    <li><a href="#portfolio">Section 1</a></li>
                     <li><a href="#">Section 2</a></li>
                 </ul>
             </nav>  
@@ -90,9 +91,86 @@
         </div>
     </main>
 
-    <section class="">
+    <section class="portfolio-container" id="Portfolio-section">
+        <h2>Projet d'études :</h2>
+        <div class="portfolio-projects-section">
 
+            <a href="#Portfolio-section" class="portfolio-project-box">
+                <div class="portfolio-project-image-section">
+                    <img src="img/No-Thumbnail.png" class="portfolio-illustration-img" alt="No-Thumbnail">
+                    <div class="portfolio-basic-info">
+                        <img src="img/time-logo.png" alt="time logo" class="info-logo">
+                        <p class="basic-info-text">4 mois</p>
+                        <img src="img/team-logo.png" alt="team logo" class="info-logo">
+                        <p class="basic-info-text">8</p>
+                        <img src="img/language-logo.png" alt="programming language logo" class="info-logo">
+                        <p class="basic-info-text">C#</p>
+                    </div>
+                </div>
+                <div class="portfolio-project-info">
+                    <h3>Withering Depths</h3>
+                    <p>Un plateformer sur la thématique "Unfair"</p>
+                    <div class="project-box-bottom-gradient"></div>
+                </div>
+            </a>
+
+            <a href="#Portfolio-section" class="portfolio-project-box">
+                <div class="portfolio-project-image-section">
+                    <img src="img/No-Thumbnail.png" class="portfolio-illustration-img" alt="No-Thumbnail">
+                    <div class="portfolio-basic-info">
+                        <img src="img/time-logo.png" alt="time logo" class="info-logo">
+                        <p class="basic-info-text">4 mois</p>
+                        <img src="img/team-logo.png" alt="team logo" class="info-logo">
+                        <p class="basic-info-text">8</p>
+                        <img src="img/language-logo.png" alt="programming language logo" class="info-logo">
+                        <p class="basic-info-text">C#</p>
+                    </div>
+                </div>
+                <div class="portfolio-project-info">
+                    <h3>Titre du projet</h3>
+                    <p>Rapide description du projet</p>
+                    <div class="project-box-bottom-gradient"></div>
+                </div>
+            </a>
+        
+        </div>
     </section>
-
+    <section class="about-me-container">
+        <div class="about-me-skills">
+            <h3>Skills :</h3>
+            <div class="about-me-skills-container">
+                <div class="about-me-skill">
+                    <div class="about-me-skill-bar-border">
+                        <div class="about-me-skill-bar-filling C-sharp"></div>
+                    </div>
+                    <h3>C#</h3>
+                </div>
+                <div class="about-me-skill">
+                    <div class="about-me-skill-bar-border">
+                        <div class="about-me-skill-bar-filling HTMLCSS"></div>
+                    </div>
+                    <h3>HTML/CSS</h3>
+                </div>
+                <div class="about-me-skill">
+                    <div class="about-me-skill-bar-border">
+                        <div class="about-me-skill-bar-filling Unity"></div>
+                    </div>
+                    <h3>Unity</h3>
+                </div>
+                <div class="about-me-skill">
+                    <div class="about-me-skill-bar-border">
+                        <div class="about-me-skill-bar-filling Rider"></div>
+                    </div>
+                    <h3>Rider</h3>
+                </div>
+                <div class="about-me-skill">
+                    <div class="about-me-skill-bar-border">
+                        <div class="about-me-skill-bar-filling VS"></div>
+                    </div>
+                    <h3>Visual Studio</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

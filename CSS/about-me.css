@@ -1,0 +1,105 @@
+.about-me-container{
+    width: 100%;
+    height: 50vh;
+
+    padding: 3vw 8vw;
+    border-top: 0.5rem solid var(--header-background-color);
+}
+
+.about-me-container h3{
+    font-size: 3rem;
+}
+
+.about-me-skills-container{
+    width: 100%;
+    height: fit-content;
+
+    padding: 20px 10px 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.about-me-skill{
+    height: 25px;
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-me-skill h3{
+    font-size: 2rem;
+    line-height: 1.35;
+    flex-basis: 150px;
+    margin-left: 10px;
+
+
+    text-align: left;
+}
+
+.about-me-skill-bar-border{
+    height: 100%;
+    flex-basis: 100px;
+
+    flex-grow: 1;
+    border-radius: 10px;
+
+    background-color: var(--portfolio-box-background-color);
+    border: 0.5rem solid var(--header-background-color);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-skill-bar-filling{
+    height: 100%;
+
+    border-radius: 5px;
+    
+    background-color: var(--text-highlight-color);
+}
+
+.C-sharp{
+    width: 80%;
+}
+.HTMLCSS{
+    width: 30%;
+}
+.Unity{
+    width: 90%;
+}
+.Rider{
+    width: 80%;
+}
+.VS{
+    width: 60%;
+}
+
+@media only screen and (max-width:600px){
+    .about-me-container h3{
+        font-size: 2.5rem;
+    }
+    .about-me-skill h3{
+        font-size: 1.8rem;
+        line-height: 1.35;
+        flex-basis: 150px;
+        margin-left: 5px;
+    }
+
+    .about-me-skill{
+        height: 43px;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .about-me-skills-container{
+        row-gap: 10px;
+    }
+
+    .about-me-skill-bar-border{
+        border: 0.3rem solid var(--header-background-color);
+    }
+}
