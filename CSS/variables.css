@@ -7,7 +7,9 @@
 
     --text-main-color:white;
     --text-subtil-color:#cecececc;
-    --text-highlight-color:#9d4bad;
+    --text-highlight-color:#954fa3;
+
+    --pale-purple: #9C819E;
 }
 
 @font-face {

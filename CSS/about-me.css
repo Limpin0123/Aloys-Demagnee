@@ -1,6 +1,6 @@
 .about-me-container{
     width: 100%;
-    height: 50vh;
+    height: fit-content;
 
     padding: 3vw 8vw;
     border-top: 0.5rem solid var(--header-background-color);
@@ -9,12 +9,31 @@
 .about-me-container h3{
     font-size: 3rem;
 }
+.about-me-container h4{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.about-me-container p{
+    font-size: 1.8rem;
+}
+
+.about-me-default-div-spacing{
+    padding: 10px;
+}
+.about-me-default-text-spacing{
+    padding: 0 10px;
+}
+.about-me-default-paragraph-spacing{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+/*---------- Hard Skills ----------*/
 
 .about-me-skills-container{
     width: 100%;
     height: fit-content;
 
-    padding: 20px 10px 10px 10px;
 
     display: flex;
     flex-direction: column;
@@ -24,6 +43,7 @@
 .about-me-skill{
     height: 25px;
     width: 70%;
+    min-width: 600px;
 
     display: flex;
     flex-direction: row;
@@ -35,7 +55,6 @@
     line-height: 1.35;
     flex-basis: 150px;
     margin-left: 10px;
-
 
     text-align: left;
 }
@@ -78,9 +97,97 @@
     width: 60%;
 }
 
+
+/*---------- Soft Skills ----------*/
+.about-me-softskills{
+    width: 100%;
+    height: fit-content;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.about-me-softskill-box{
+    width: fit-content;
+    height: 60px;
+    
+    padding: 0px 20px;
+    border-radius: 5px;
+    border: 0.5rem solid var(--header-background-color);
+    background-color: var(--portfolio-box-background-color);
+}
+.about-me-softskill-box p{
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: calc(60px - 1rem);
+}
+
+/*---------- Journey ----------*/
+.about-me-journey{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.about-me-step{
+    width: 350px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
+.about-me-step h3{
+    font-size: 2.3rem;
+}
+.about-me-step p{
+    font-size: 1.5rem;
+}
+.studies{
+    background-color: var(--pale-purple);
+}
+.work{
+    background-color: var(--portfolio-box-background-color);
+}
+
 @media only screen and (max-width:600px){
+
     .about-me-container h3{
         font-size: 2.5rem;
+    }
+    .about-me-container h4{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .about-me-container p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .about-me-default-div-spacing{
+        padding: 10px 10px 10px 0;
+    }
+    .about-me-default-text-spacing{
+        padding: 0;
+    }
+    .about-me-default-paragraph-spacing{
+        padding-left: 0;
+    }
+
+    /*---------- Hard Skills ----------*/
+    .about-me-skills-container{
+        row-gap: 10px;
+    }
+    .about-me-skill{
+        height: 43px;
+        width: 100%;
+        min-width: 0;
+        flex-direction: column-reverse;
     }
     .about-me-skill h3{
         font-size: 1.8rem;
@@ -88,18 +195,52 @@
         flex-basis: 150px;
         margin-left: 5px;
     }
-
-    .about-me-skill{
-        height: 43px;
-        width: 100%;
-        flex-direction: column-reverse;
-    }
-
-    .about-me-skills-container{
-        row-gap: 10px;
-    }
-
     .about-me-skill-bar-border{
         border: 0.3rem solid var(--header-background-color);
+    }
+    
+    /*---------- Soft Skills ----------*/
+
+    .about-me-softskills{
+        column-gap: 15px;
+    }
+    .about-me-softskill-box{
+        height: 40px;
+        padding: 0px 10px;
+        border-radius: 5px;
+        border: 0.3rem solid var(--header-background-color);
+    }
+    .about-me-softskill-box p{
+        font-size: 1.5rem;
+        line-height: calc(40px - 0.5rem);
+    }
+
+    /*---------- Journey ----------*/
+    .about-me-journey{
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me-step{
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px){
+    /*---------- Soft Skills ----------*/
+    .about-me-softskill-box{
+        height: 50px;
+        border-radius: 5px;
+        border: 0.4rem solid var(--header-background-color);
+    }
+    .about-me-softskill-box p{
+        font-size: 1.8rem;
+        line-height: calc(50px - 0.5rem);
+    }
+    
+    /*---------- Journey ----------*/
+    .about-me-step{
+        width: clamp(250px, 40%, 300px);        
     }
 }
