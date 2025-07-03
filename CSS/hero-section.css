@@ -3,7 +3,9 @@ main{
 
     width: 100%;
     height: calc(80vh - var(--header-height));
+    min-height: fit-content;
     margin-top: var(--header-height);
+    padding: 0 20px 20px 20px;
 
     background-color: #1e1d20;
     background-image: url(../img/Aloys-Demagnee-back-shadow.png), url(../img/background.png);
@@ -22,33 +24,33 @@ main{
 }
 
 main h1{
-    font-size: 4.5rem;
+    font-size: clamp(20px, 3vh, 30px);
     line-height: 1.25;
     max-width: 10rem;
     
 }
 
 main h2{
-    font-size: 4rem;
+    font-size: clamp(18px, 2.5vh, 26px);
     line-height: 1.25;
     overflow-wrap: break-word;
     hyphens: auto;
 }
 
 main p{
-    font-size: 2rem;
+    font-size: clamp(14px, 1.5vh, 20px);
     line-height: 1.75;
     max-width: 40rem;
 }
 main .p-quotation{
-    font-size: 1.9rem;
+    font-size: clamp(13px, 1.4vh, 18px);
     line-height: 1.75;
     font-style: italic;
     max-width: 30rem;
 }
 main .p-personnality{
     color: var(--text-subtil-color);
-    font-size: 1.5rem;
+    font-size: clamp(11px, 1.2vh, 16px);
     line-height: 1.5;
     font-style: italic;
 }
@@ -75,7 +77,7 @@ main .hero-section-quotations{
     width: 50vw;
     margin-top: 10vh;
 }
-main .hero-section-team-work, .hero-section-methodology{
+main .hero-section-team-work,main .hero-section-methodology{
     padding: 0 0 0 20px;
     border-left: 0.5rem solid var(--text-highlight-color);
 }
@@ -88,12 +90,13 @@ main .hero-section-methodology{
 }
 
 /* Mobile version */
-
-@media only screen and (max-width: 600px){
+/* Base Applied to screen sizes until tablet version */
+@media only screen and (max-width: 768px){
     main{
         height: calc(100vh - var(--header-height) - 30px);
         margin-top: calc(var(--header-height) + 30px);
         width: 100%;
+
 
         position: relative;
 
@@ -111,22 +114,17 @@ main .hero-section-methodology{
     }
 
     main h1{
-        font-size: 3rem;
-        line-height: 1.25;
         text-align: center;
         max-width: 100%;
     }
 
     main p{
-        font-size: 1.5rem;
-        line-height: 1.75;
         text-align: center;
         max-width: 100%;
     }
 
     main .hero-section-presentation{
         width: 100%;
-        margin: 5px 20px 20px 20px;
 
         max-width: none;
         display: flex;
@@ -142,97 +140,56 @@ main .hero-section-methodology{
 
 /* Tablet version */
 
-@media only screen and (min-width: 601px) and (max-width: 768px){
-    main h1{
-        font-size: 2.5rem;
-        line-height: 1.25;
-        max-width: 10rem;
+@media only screen and (min-width: 601px) and (max-width: 768px) and (min-height: 600px){
+    main{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    main .hero-section-presentation{
+        margin-top: 0;
     }
 
+    main .hero-section-quotations{
+        width: 100%;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    main .hero-section-team-work,main .hero-section-methodology{
+        width: 45%;
+        padding: 10px 0 0 0;
+        border-top: 0.5rem solid var(--text-highlight-color);
+        border-left: 0;
+        margin-left: 0;
+        margin-top: 20px;
+    }
     main h2{
-        font-size: 2.1rem;
-        line-height: 1.25;
-        max-width: 15rem;
-    }
-
-    main p{
-        font-size: 1.3rem;
-        line-height: 1.75;
-        max-width: 25rem;
+        text-align: center;
     }
     main .p-quotation{
-        font-size: 1.2rem;
-        line-height: 1.75;
-        max-width: 30rem;
+        max-width: none;
     }
     main .p-personnality{
-        font-size: 1.1rem;
+        color: var(--text-subtil-color);
+        font-size: clamp(11px, 1.2vh, 16px);
         line-height: 1.5;
-    }
-    main .hero-section-methodology{
-        margin-left: 22vh;
+        font-style: italic;
     }
 }
 
 /* Big tablet version */
 
 @media only screen and (min-width: 769px) and (max-width: 992px){
-    main h1{
-        font-size: 2.5rem;
-        line-height: 1.25;
-        max-width: 10rem;
-    }
-
-    main h2{
-        font-size: 2.1rem;
-        line-height: 1.25;
-        max-width: 15rem;
-    }
-
-    main p{
-        font-size: 1.3rem;
-        line-height: 1.75;
-        max-width: 25rem;
-    }
-    main .p-quotation{
-        font-size: 1.2rem;
-        line-height: 1.75;
-        max-width: 30rem;
-    }
-    main .p-personnality{
-        font-size: 1.1rem;
-        line-height: 1.5;
+    main .hero-section-team-work{
+        margin-left: 20vh;
     }
     main .hero-section-methodology{
-        margin-left: 22vh;
+        margin-left: calc(20vh + 10px);
     }
 }
 
 /* Small screen version*/
 
 @media only screen and (min-width: 993px) and (max-width: 1200px){
-    main h1{
-        font-size: 3rem;
-        max-width: 10rem;
-    }
-
-    main h2{
-        font-size: 2.5rem;
-        max-width: 15rem;
-    }
-
-    main p{
-        font-size: 1.5rem;
-        max-width: 30rem;
-    }
-    main .p-quotation{
-        font-size: 1.3rem;
-        max-width: 30rem;
-    }
-    main .p-personnality{
-        font-size: 1.1rem;
-    }
-    main .hero-section-methodology{
-        margin-left: calc(22vh + 40px);
-    }
+    
 }
