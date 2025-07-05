@@ -35,15 +35,14 @@
     filter: grayscale(0%);
 }
 .portfolio-project-box:hover .portfolio-project-image-section{
-    height: 20%;
+    height: 60%;
 }
 .portfolio-project-box:hover .portfolio-project-info{
-    height: 80%;
-    transition: height 0s ease;
+    height: 40%;
 }
 
 .portfolio-project-image-section{
-    height: 60%;
+    height: 80%;
     position: relative;
     transition: height 0.3s ease;
 }
@@ -87,8 +86,8 @@
 }
 
 .portfolio-project-info{
-    height: 40%;
-    padding: 10px;
+    height: 20%;
+    padding: 20px 40px 20px 20px;
     position: relative;
     transition: height 0.3s ease;
 }

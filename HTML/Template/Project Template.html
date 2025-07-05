@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloys Demagnée portfolio</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!--reset stylesheet-->
+    <link rel="stylesheet" href="../CSS/reset.css">
+
+    <!--custom stylesheet-->
+    <link rel="stylesheet" href="../CSS/variables.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/header-footer.css">
+    <link rel="stylesheet" href="../CSS/projet.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+            <section class="logo-title-section">
+                <img src="../img/logo-limpin-small.png" alt="limpin logo">
+
+                <section class="title-section">
+                    <div class="vertical-bar"></div>
+                    <div class="title-text">
+                        <h2 class="important-h2">Aloys Demagnée</h2>
+                        <h2>Game Programming</h2>
+                    </div>
+                </section>
+
+            </section>
+
+            <nav class="header-page-navigation show-on-pc-layout">
+                <div class="vertical-bar"></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
+                    <li><a href="../index.html#About-me-section">À propos</a></li>
+                </ul>
+            </nav>        
+
+            <div class="header-main-sm">
+
+                <a class="sm-logo-gh" target="_blank" href="https://github.com/Limpin0123"></a>
+                <a class="sm-logo-li" href="#"></a> <!--ajouter target="_blank" quand le compte linkedin sera créé-->
+
+            </div>
+        </div>
+        <!--Ne pas oublier d'update la deuxième navigation barre avec la 1er-->
+        <nav class="header-page-navigation show-on-mobile-layout">
+                <div class="horizontale-bar"></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
+                    <li><a href="../index.html#About-me-section">À propos</a></li>
+                </ul>
+            </nav>  
+    </header>
+
+    <section class="project-container">
+        <div class="project-title">
+            <img src="../img/logo-limpin-small.png" alt="logo of the project">
+            <h1>Titre du projet</h1>
+        </div>
+        <div class="project-first-description">
+            <div class="project-side-info marge-right">
+                <h2>Pitch & fiche signalétique :</h2>
+                <p>Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
+            </div>
+            <video class="project-demo" poster="../Ressources/Withering-Depths/poster.webp" controls>
+                <source src="../Ressources/Withering-Depths/WD-Trailer.mp4">
+            </video>
+            <div class="project-side-info marge-left">
+                <h2>En bref :</h2>
+                <p>Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
+            </div>
+        </div>
+
+        <div class="project-icon-info">
+            <img src="../img/time-logo.png" alt="time logo">
+            <p>X mois</p>
+            <img src="../img/team-logo.png" alt="team logo">
+            <p>X</p>
+            <img src="../img/language-logo.png" alt="programming language logo">
+            <p>X</p>
+            <div class="role-info">
+                <img src="../img/role-logo.png" alt="role in team logo">
+                <p>X</p>
+            </div>
+        </div>
+
+        <div class="project-learnings">
+            <h2>Mes réalisations sur le projet :</h2>
+            <p>Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
+        </div>
+
+        <div class="project-learnings">
+            <h2>Axes d'Amélioration :</h2>
+            <p>Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
+        </div>
+
+        <div class="project-gallery">
+            <h2>Galerie :</h2>
+            <div class="gallery-area">
+                <img src="../img/No-Thumbnail.png" alt="no thumbnail">
+                <img src="../img/No-Thumbnail.png" alt="no thumbnail">
+                <img src="../img/No-Thumbnail.png" alt="no thumbnail">
+                <video class="project-demo" poster="../Ressources/Withering-Depths/poster.webp" controls>
+                <source src="../Ressources/Withering-Depths/WD-Trailer.mp4">
+                </video>
+            </div>
+        </div>
+
+        <div id="lightbox">
+            <p onclick="showImage(currentIndex - 1)"><</p>
+            <img id="lightbox-img" src="../img/No-Thumbnail.png">
+            <p onclick="showImage(currentIndex + 1)">></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="contact-container">
+            <h2>Me contacter :</h2>
+            <a href="mailto:demagnee.aloys@gmail.com" class="sm-logo-mail"></a>
+            <a href="#" class="sm-logo-li"></a>
+        </div>
+    </footer>
+
+    <script>
+        const images = Array.from(document.querySelectorAll(".gallery-area img"));
+        images.forEach((img, index) => {
+            img.addEventListener("click", () => openLightbox(index))
+        })
+        let currentIndex = 0;
+
+        function openLightbox(index){
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            currentIndex = index;
+            img.src = images[currentIndex].src;
+            lightbox.style.display = 'flex';
+        }
+        function closeLightbox(){
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        function showImage(index){
+            if(index < 0){
+                index = images.length -1;
+            }
+            if(index > images.length -1){
+                index = 0
+            }
+            if(index >= 0 && index < images.length){
+                const img = document.getElementById('lightbox-img');
+                img.src = images[index].src;
+                currentIndex = index;
+            }
+        } 
+        
+        document.addEventListener('keydown', function(e){
+            const lightbox = document.getElementById('lightbox');
+            if(lightbox.style.display === 'flex'){
+                if(e.key === 'ArrowRight'){
+                    showImage(currentIndex + 1);
+                }else if(e.key === 'ArrowLeft'){
+                    showImage(currentIndex - 1);
+                }else if(e.key === 'Escape'){
+                    closeLightbox();
+                }
+            }
+        });
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if(e.target.id === 'lightbox'){
+                closeLightbox();
+            }
+        })
+    </script>
+</body>
+</html>
