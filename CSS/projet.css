@@ -40,18 +40,26 @@
 }
 
 .project-first-description{
-    width: 100%;
+    width: 90%;
     height: fit-content;
     margin-top: 30px;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 /*----- side info -----*/
 .project-side-info{
-    width: 20%;
-    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.project-side-info div{
+    width: 100%;
+    height: fit-content;
 
     padding: 10px 20px;
 
@@ -64,11 +72,12 @@
 .project-side-info p{
     text-align: center;
 }
-.marge-right{
-    margin-right: 15px;
-}
-.marge-left{
-    margin-left: 15px;
+
+.project-first-description .project-video-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .project-demo{
     width: 100%;
@@ -104,18 +113,15 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-.project-icon-info div{
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
 .role-info{
     margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 /*----- Learnings -----*/
 .project-learnings{
-    width: calc(90% + 40px);
+    width: calc(90%);
     margin-top: 20px;
     padding: 10px 20px 10px 20px;
 
@@ -216,19 +222,24 @@
     /*----- side info -----*/
     .project-side-info{
         width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .project-side-info div{
+        width: 100%;
         height: fit-content;
         padding: 10px;
     }
     .marge-right{
         margin-right: 0px;
-        order: 2;
     }
     .marge-left{
         margin-left: 0px;
-        order: 3;
+    }
+    .project-first-description .project-video-section{
+        width: 100%;
     }
     .project-demo{
-        order: 1;
         width: 100%;
 
         border: 0.3rem solid var(--header-background-color);
