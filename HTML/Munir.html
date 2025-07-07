@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloys Demagnée portfolio</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!--reset stylesheet-->
+    <link rel="stylesheet" href="../CSS/reset.css">
+
+    <!--custom stylesheet-->
+    <link rel="stylesheet" href="../CSS/variables.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/header-footer.css">
+    <link rel="stylesheet" href="../CSS/projet.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+            <section class="logo-title-section">
+                <img src="../img/logo-limpin-small.png" alt="limpin logo">
+
+                <section class="title-section">
+                    <div class="vertical-bar"></div>
+                    <div class="title-text">
+                        <h2 class="important-h2">Aloys Demagnée</h2>
+                        <h2>Game Programming</h2>
+                    </div>
+                </section>
+
+            </section>
+
+            <nav class="header-page-navigation show-on-pc-layout">
+                <div class="vertical-bar"></div>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
+                    <li><a href="../index.html#About-me-section">À propos</a></li>
+                </ul>
+            </nav>        
+
+            <div class="header-main-sm">
+
+                <a class="sm-logo-gh" target="_blank" href="https://github.com/Limpin0123"></a>
+                <a class="sm-logo-li" href="#"></a> <!--ajouter target="_blank" quand le compte linkedin sera créé-->
+
+            </div>
+        </div>
+        <!--Ne pas oublier d'update la deuxième navigation barre avec la 1er-->
+        <nav class="header-page-navigation show-on-mobile-layout">
+                <div class="horizontale-bar"></div>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
+                    <li><a href="../index.html#About-me-section">À propos</a></li>
+                </ul>
+            </nav>  
+    </header>
+
+    <section class="project-container">
+        <div class="project-title">
+            <img src="../Ressources/Munir/Logo.png" alt="logo of the project">
+            <h1>Munir : in a lamp</h1>
+        </div>
+        <div class="project-first-description">
+            <div class="project-video-section">
+                <video class="project-demo" poster="../Ressources/Munir/poster.jpg" controls>
+                    <source src="../Ressources/Munir/demo.mp4">
+                </video>
+                <div class="project-icon-info">
+                    <img src="../img/time-logo.png" alt="time logo">
+                    <p>4 mois</p>
+                    <img src="../img/team-logo.png" alt="team logo">
+                    <p>10</p>
+                    <img src="../img/language-logo.png" alt="programming language logo">
+                    <p>C#</p>
+                    <div class="role-info">
+                        <img src="../img/role-logo.png" alt="role in team logo">
+                        <p>Programmeur
+                            <br>collaboration avec des tech artistes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-side-info">
+                <div>
+                    <h2>Pitch & fiche signalétique :</h2>
+                    <p>
+                        Affaibli par des années de mélancolie, <strong>incarnez Munir</strong>, un génie prisonnier
+                        de sa lampe, qui tente de <strong>reconstruire le temple</strong> de son défunt compagnon.
+                        Utilisez les <strong>mécaniques de poids</strong> misent à votre disposition pour venir à bout des
+                        différentes énigmes.
+                        <br><br>Munir est un jeu de <strong>puzzle adventure</strong> développé autour des thèmes imposés :
+                        "<strong>personnage non conventionnel</strong>", "<strong>monde fait de tesselles dynamiques</strong>" et
+                        "<strong>animation procédurale</strong>". Le game design a été entièrement pensé pour tirer
+                        pleinement parti d'un <strong>contrôleur atypique</strong>.
+                    </p>
+                </div>
+                <div>
+                    <h2>En bref :</h2>
+                    <p>
+                        Durant ce projet, j'ai consacré une grande partie de la production à <strong>itérer
+                        sur la physique et le feeling</strong> de notre contrôleur afin de le rendre aussi 
+                        <strong>agréable</strong> et <strong>intuitif</strong> que possible à prendre en main. J'en ai aussi profité pour
+                        m'<strong>initier au tooling</strong> et à la création d'<strong>inspecteurs customisés</strong>.
+                        <br><br>Ce projet fut la première fois où je n'étais <strong>pas
+                        seul à endosser le rôle de programmeur</strong> dans une équipe. Tout en
+                        conservant le rôle de programmeur principal, j'ai pu bénéficier de l'<strong>aide de
+                        tech artists</strong>, une filière que j'ai appris à connaître à cette occasion.
+                        <br><br>Projet réalisé dans le cadre de mes études à Rubika Montréal.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-learnings">
+            <h2>Mes réalisations sur le projet :</h2>
+            <p>
+                Pour la première fois, j'ai <strong>partagé le rôle de programmeur</strong> avec des tech
+                artists chargés de l'animation procédurale, du son et des VFX. Pour ma part, je me
+                suis occupé de :
+                <br><br>• <strong>Contrôleur et physique 3D</strong> : Le contrôleur, feature principale de notre concept
+                a concentré la <strong>majeure partie de mon travail</strong>. Inspiré de "<strong>Endoparasitic</strong>" notre contrôleur
+                en transpose l'essence <strong>dans un environnement 3D</strong> : le joueur de <strong>s'agripper</strong> à une
+                surface (comme le sol) <strong>puis se traine</strong> depuis ce nouveau point d'encrage pour se
+                déplacer.
+                <br>De <strong>nombreuses recherches</strong> ont été menées pour rendre le contrôleur intuitif,
+                réactif et fluide, aussi bien pour <strong>les contrôles</strong> que pour <strong>les fonctionnalités</strong> à
+                implémenter. Combien de boutons sont nécessaires ? La main doit-elle glisser sur
+                les surfaces ou conserver une certaine distance avec le sol, nécessitiant une
+                touche pour la relever ? Doit-elle toujours chercher le point le plus bas ? Autant
+                de <strong>questions qui ont guidé cette phase de conception</strong>.
+                <br>Le contrôleur final repose sur <strong>trois commandes</strong> : une pour <strong>s'aggriper</strong>, une pour <strong>lever la
+                main ou le corps</strong> et un <strong>joystick pour se déplacer</strong>. La main reste à une <strong>distance fixe du sol</strong>
+                et n'épouse pas les parois. L'ensemble fut pensé pour offrir une <strong>prise en main rapide et
+                agréable</strong>.
+                <br><br>• <strong>Tooling</strong> : Pour compenser un temps de production court, j'ai développer un outil
+                <strong>générant procéduralement un mesh dans la scène</strong>, à partir d'une liste de coordonnées et d'un
+                matériau choisit. Il a grandement <strong>facilité la mise en place des connexions</strong> entre nos
+                actionneurs (leviers, boutons, ...) et nos actionnés (portes, pistons, ...).
+                J'ai également créé un <strong>inspecteur customisé</strong> pour simplifier la gestion et l'édition de
+                ces éléments.
+                <br><br>• <strong>Éléments de gameplay</strong> : Tout comme les projets précédents, j'ai
+                <strong>programmé tous les éléments de gameplay</strong> tels que boutons, plaques de pression, cubes,
+                portes, pistons, modificateurs de poids et barrières anti-modificateur. Le principal défi
+                était de permettre aux <strong>modificateurs</strong> de poids de <strong>s'attacher physiquement à
+                plusieurs éléments de LD</strong> pour en modifier les caractéristiques.
+                <br><br>• <strong>Cinématiques et caméras</strong> : J' ai appris à réaliser des cinématiques avec l'outil
+                "<strong>Timeline</strong>" de Unity, utilisées pour les <strong>transitions de niveaux</strong> ainsi que pour l'<strong>intro</strong> et
+                la <strong>fin du jeu</strong>. J'ai aussi développé un <strong>système permettant de changer la cible des caméras</strong>,
+                facilitant la mise en valeur des level designs et énigmes par des mouvements intelligents.
+                <br><br>• <strong>Reprise d'apprentissages</strong> : Ce projet m'a permis de mettre à contribution mes
+                apprentissages en <strong>polymorphisme d'héritage et de surcharge</strong>, l'utilisation de "<strong>Managers</strong>",
+                et la <strong>séparation des scripts</strong> selon leur usages, ce qui a amélioré la clarté de code et
+                facilité la maintenance.
+            </p>
+        </div>
+
+        <div class="project-learnings">
+            <h2>Axes d'Amélioration :</h2>
+            <p>
+                Si j'avais eu plus de temps, j'aurais abordé certains aspects différemment.
+                En premier lieu, j'aurais <strong>retravaillé la gestion de la verticalité du contrôleur</strong>
+                pour la rendre plus fluide et réactive. Actuellement, la main <strong>doit prendre de l'élan
+                pour s'élever</strong>, ce qui peut frustrer le joueur. Une solution aurait été d'<strong>utiliser une
+                force instantanée</strong> pour rendre le mouvement plus direct.
+                Concernant les cinématiques d'intro et de fin, <strong>l'utilisation de l'outil Timeline n'était
+                pas idéale</strong>, car il <strong>ne permet pas nativement de passer des sections</strong> d'un simple clic.
+                La <strong>collaboration</strong> avec les autres programmeurs aurait pu être plus efficace. N'ayant
+                encore jamais eu à déléguer des tâches, j'ai eu des <strong>difficultés à les confier</strong> aux
+                tech artistes. Une simple <strong>répartition en amont</strong> aurait permis une meilleure distribution
+                de la charge de travail et un gain de temps notable.
+                <br><br>Ce projet m'a malgré tout <strong>beaucoup appris</strong>, que ce soit sur le <strong>travail d'équipe</strong>,
+                la gestion de la <strong>physique</strong>, les <strong>cinématiques</strong> ou la <strong>création d'outils</strong>.
+            </p>
+        </div>
+
+        <div class="project-gallery">
+            <h2>Galerie :</h2>
+            <div class="gallery-area">
+                <img src="../Ressources/Munir/poster.jpg" alt="poster">
+                <img src="../Ressources/Munir/rise-arm.gif" alt="rising arm">
+                <img src="../Ressources/Munir/move.gif" alt="moving">
+                <img src="../Ressources/Munir/LD-element-demo.gif" alt="ld elements demo">
+                <img src="../Ressources/Munir/cutscene-demo.gif" alt="cutscene">
+                <img src="../Ressources/Munir/tool-demo.gif" alt="tool demo">
+                <video class="project-demo" controls>
+                <source src="../Ressources/Munir/demo.mp4">
+                </video>
+                <img src="../Ressources/Munir/credit.png" alt="credit">
+            </div>
+        </div>
+
+        <div id="lightbox">
+            <p onclick="showImage(currentIndex - 1)"><</p>
+            <img id="lightbox-img" src="../img/No-Thumbnail.png">
+            <p onclick="showImage(currentIndex + 1)">></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="contact-container">
+            <h2>Me contacter :</h2>
+            <a href="mailto:demagnee.aloys@gmail.com" class="sm-logo-mail"></a>
+            <a href="#" class="sm-logo-li"></a>
+        </div>
+    </footer>
+
+    <script>
+        const images = Array.from(document.querySelectorAll(".gallery-area img"));
+        images.forEach((img, index) => {
+            img.addEventListener("click", () => openLightbox(index))
+        })
+        let currentIndex = 0;
+
+        function openLightbox(index){
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            currentIndex = index;
+            img.src = images[currentIndex].src;
+            lightbox.style.display = 'flex';
+        }
+        function closeLightbox(){
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        function showImage(index){
+            if(index < 0){
+                index = images.length -1;
+            }
+            if(index > images.length -1){
+                index = 0
+            }
+            if(index >= 0 && index < images.length){
+                const img = document.getElementById('lightbox-img');
+                img.src = images[index].src;
+                currentIndex = index;
+            }
+        } 
+        
+        document.addEventListener('keydown', function(e){
+            const lightbox = document.getElementById('lightbox');
+            if(lightbox.style.display === 'flex'){
+                if(e.key === 'ArrowRight'){
+                    showImage(currentIndex + 1);
+                }else if(e.key === 'ArrowLeft'){
+                    showImage(currentIndex - 1);
+                }else if(e.key === 'Escape'){
+                    closeLightbox();
+                }
+            }
+        });
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if(e.target.id === 'lightbox'){
+                closeLightbox();
+            }
+        })
+    </script>
+</body>
+</html>

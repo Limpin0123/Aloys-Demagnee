@@ -51,7 +51,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: grayscale(50%);
+    filter: grayscale(30%);
     transition: filter 0.3s ease;
 }
 .portfolio-basic-info{
