@@ -81,7 +81,7 @@
 }
 .project-demo{
     width: 100%;
-    max-width: fit-content;
+    max-width: 1000px;
     max-height: fit-content;
     height: auto;
 

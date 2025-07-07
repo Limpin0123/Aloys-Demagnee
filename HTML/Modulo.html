@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloys Demagnée portfolio</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!--reset stylesheet-->
+    <link rel="stylesheet" href="../CSS/reset.css">
+
+    <!--custom stylesheet-->
+    <link rel="stylesheet" href="../CSS/variables.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/header-footer.css">
+    <link rel="stylesheet" href="../CSS/projet.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+            <section class="logo-title-section">
+                <img src="../img/logo-limpin-small.png" alt="limpin logo">
+
+                <section class="title-section">
+                    <div class="vertical-bar"></div>
+                    <div class="title-text">
+                        <h2 class="important-h2">Aloys Demagnée</h2>
+                        <h2>Game Programming</h2>
+                    </div>
+                </section>
+
+            </section>
+
+            <nav class="header-page-navigation show-on-pc-layout">
+                <div class="vertical-bar"></div>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
+                    <li><a href="../index.html#About-me-section">À propos</a></li>
+                </ul>
+            </nav>        
+
+            <div class="header-main-sm">
+
+                <a class="sm-logo-gh" target="_blank" href="https://github.com/Limpin0123"></a>
+                <a class="sm-logo-li" href="#"></a> <!--ajouter target="_blank" quand le compte linkedin sera créé-->
+
+            </div>
+        </div>
+        <!--Ne pas oublier d'update la deuxième navigation barre avec la 1er-->
+        <nav class="header-page-navigation show-on-mobile-layout">
+                <div class="horizontale-bar"></div>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
+                    <li><a href="../index.html#About-me-section">À propos</a></li>
+                </ul>
+            </nav>  
+    </header>
+
+    <section class="project-container">
+        <div class="project-title">
+            <img src="../Ressources/Modulo/Logo.png" alt="logo of the project">
+            <h1>Modulo</h1>
+        </div>
+        <div class="project-first-description">
+            <div class="project-video-section">
+                <video class="project-demo" poster="../Ressources/Modulo/poster2.png" controls>
+                    <source src="../Ressources/Modulo/demo.mp4">
+                </video>
+                <div class="project-icon-info">
+                    <img src="../img/time-logo.png" alt="time logo">
+                    <p>4 mois</p>
+                    <img src="../img/team-logo.png" alt="team logo">
+                    <p>4</p>
+                    <img src="../img/language-logo.png" alt="programming language logo">
+                    <p>C#</p>
+                    <div class="role-info">
+                        <img src="../img/role-logo.png" alt="role in team logo">
+                        <p>Programmeur seul</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-side-info">
+                <div>
+                    <h2>Pitch & fiche signalétique :</h2>
+                    <p>
+                        Plongez dans le monde de Sylva et incarnez le <strong>dernier rempart des Automates</strong>.
+                        Placez des <strong>tours défensives</strong> et améliorez-les grâce à des <strong>modules spécialisés</strong> pour repousser
+                        l'invasion des "Acris", une menace mystérieuse.
+                        <br><br>Modulo est un <strong>Tower Defense 2D</strong> avec une <strong>caméra top-down</strong>, mêlé à des mécaniques de
+                        <strong>Base Defender</strong>. Son game design met l'accent sur l'<strong>adaptabilité</strong>, la <strong>réactivité</strong>, mais
+                        aussi la <strong>planification stratégique</strong> d'une défense. Un point clef de Modulo est la <strong>création
+                        de chemins</strong> répondant aux spécificités de chaque ennemi.
+                    </p>
+                </div>
+                <div>
+                    <h2>En bref :</h2>
+                    <p>
+                        Modulo est un projet dans lequel j'ai pu apprendre à <strong>hiérarchiser des tâches</strong> et à <strong>gérer
+                        efficacement un scope</strong> dans un laps de temps restreint.
+                        <br><br>Ce fut également une première approche de certains <strong>concepts primordiaux
+                        pour l'architecture d'un code propre</strong>, tels que le <strong>polymorphisme</strong>, les bases de l'<strong>optimisation</strong>
+                        et l'utilisation de "<strong>Managers</strong>".
+                        <br><br>Projet réalisé dans le cadre de mes études à Rubika Valenciennes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-learnings">
+            <h2>Mes réalisations sur le projet :</h2>
+            <p>
+                En tant majoritairement le seul programmeur de l'équipe, j'ai pris en charge tous les aspects
+                de la <strong>programmation</strong>, tout en endossant également le rôle de <strong>game designer</strong> sur
+                ce projet. Voici les points clefs de ce projet :
+                <br><br>• <strong>Les ennemis</strong> : Pour encourager l'adaptabilité, Modulo proposait <strong>six types d'ennemis</strong> 
+                aux comportements variés, comme le "Mage" qui boostait les ennemis adjacents, ou le "Stunner" qui
+                paralysait les défenses du joueur. C'est à travers ce système que j'ai <strong>découvert
+                les bases du polymorphisme d'héritage</strong>, rendant le code plus lisible et modifiable tout au long de la
+                production.
+                <br><br>• Les <strong>pathfindings</strong> : En cohérence avec la diversité des ennemis, <strong>plusieurs 
+                systèmes de pathfinding</strong> ont été mis en place. Le "Breaker", par exemple, priorisait la
+                destruction des bâtiments, tandis que le "Sprinter" les évitait. Le pathfinding a d'abord été
+                implémenté avec l'algorithme de <strong>Dijkstra puis remplacé par A*</strong> pour des raisons d'optimisation.
+                Des éléments comme les "path beacons", permettaient d'<strong>influer dynamiquement sur la
+                trajectoire</strong> des ennemis, en les attirant à leur emplacement.
+                <br><br>• Le <strong>système de vagues</strong> : Pour proposer une expérience sur le long terme, j'ai conçu un 
+                <strong>système de vagues extensible à l'infini</strong>. Les ennemis sont générés selon des <strong>formules mathématiques</strong>
+                définissant la proportion de chaque type d'ennemi dans une vague donnée, ainsi que leur nombre total.
+                Une <strong>prévisualisation de la prochaine vague</strong> était intégrée à l'interface, permettant au joueur
+                d'anticiper sa composition.
+                <br><br>• Les <strong>tours et leurs améliorations</strong> : Les tours peuvent être améliorées à l'aide de <strong>modules
+                spécialisés</strong>, comme le module "Fire" infligeant des dégâts de zone, ou le module "Ice" qui
+                ralentit les ennemis. Ces <strong>modules sont spatialement présents sur le terrain</strong>, les rendant vulnérables
+                aux attaques ennemis. Un module peut améliorer jusqu'à huit tours situées à proximité.
+                <br><br>• L'<strong>optimisation</strong> : En raison de la nature infinie du jeu, l'optimisation était un enjeu majeur
+                pendant la production. Un soin particulier a été apporté pour <strong>limiter l'usage de "<code>Update()</code>"</strong>
+                ou de fonctions coûteuses en performance, en privilégiant par exemple les <strong>coroutines</strong> ou un 
+                <strong>système d'événements</strong>.
+            </p>
+        </div>
+
+        <div class="project-learnings">
+            <h2>Axes d'Amélioration :</h2>
+            <p>
+                Bien que le principe de polymorphisme ait été utilisé pour certains aspects du jeu, il
+                aurait <strong>pu être exploité plus largement</strong>, notamment pour la mise en place des
+                modules qui auraient pu dériver d'une classe "<code>Module</code>" avec une méthode polymorphe
+                "<code>UpgradeTower()</code>". La <strong>notion de classe abstraite</strong> m'était encore inconnue à ce
+                moment-là, mais elle aurait pu contribuer à une architecture plus modulaire. L'optimisation aurait
+                également pu être améliorée, le jeu <strong>souffrant encore de ralentissments</strong>, en particulier à
+                cause des algorithmes de pathfinding des ennemis.
+                Enfin, certains scripts restaient <strong>un peu longs et difficilement lisibles</strong>, bien qu'un
+                <strong>net progrès</strong> ait été réalisé par rapport au projet précédent (Withering Depths).
+                <br><br>Ce projet m'a néanmoins permis d'apprendre à rendre un <strong>code plus modulaire et
+                adaptatif</strong> tout en <strong>effleurant les problématiques d'optimisation</strong>.
+            </p>
+        </div>
+
+        <div class="project-gallery">
+            <h2>Galerie :</h2>
+            <div class="gallery-area">
+                <img src="../Ressources/Modulo/spawning-demo.gif" alt="spawning demo">
+                <img src="../Ressources/Modulo/Sprinter.png" alt="Sprinter">
+                <img src="../Ressources/Modulo/Breaker.png" alt="Breaker">
+                <img src="../Ressources/Modulo/Stunner.png" alt="Stunner">
+                <img src="../Ressources/Modulo/Mage.png" alt="Mage">
+                <img src="../Ressources/Modulo/Giant.png" alt="Giant">
+                <img src="../Ressources/Modulo/Blocker.png" alt="Blocker">
+                <video class="project-demo" controls>
+                <source src="../Ressources/Modulo/demo.mp4">
+                </video>
+                <img src="../Ressources/Modulo/Dijkstra-demo.png" alt="Dijkstra algorithm showcase">
+                <img src="../Ressources/Modulo/Pathfinding-demo.png" alt="Final pathfinding demo">
+                
+                <img src="../Ressources/Modulo/building-demo.gif" alt="building demo">
+                <img src="../Ressources/Modulo/Assets.png" alt="All assets">
+                <img src="../Ressources/Modulo/credit.png" alt="credit">
+
+            </div>
+        </div>
+
+        <div id="lightbox">
+            <p onclick="showImage(currentIndex - 1)"><</p>
+            <img id="lightbox-img" src="../img/No-Thumbnail.png">
+            <p onclick="showImage(currentIndex + 1)">></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="contact-container">
+            <h2>Me contacter :</h2>
+            <a href="mailto:demagnee.aloys@gmail.com" class="sm-logo-mail"></a>
+            <a href="#" class="sm-logo-li"></a>
+        </div>
+    </footer>
+
+    <script>
+        const images = Array.from(document.querySelectorAll(".gallery-area img"));
+        images.forEach((img, index) => {
+            img.addEventListener("click", () => openLightbox(index))
+        })
+        let currentIndex = 0;
+
+        function openLightbox(index){
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            currentIndex = index;
+            img.src = images[currentIndex].src;
+            lightbox.style.display = 'flex';
+        }
+        function closeLightbox(){
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        function showImage(index){
+            if(index < 0){
+                index = images.length -1;
+            }
+            if(index > images.length -1){
+                index = 0
+            }
+            if(index >= 0 && index < images.length){
+                const img = document.getElementById('lightbox-img');
+                img.src = images[index].src;
+                currentIndex = index;
+            }
+        } 
+        
+        document.addEventListener('keydown', function(e){
+            const lightbox = document.getElementById('lightbox');
+            if(lightbox.style.display === 'flex'){
+                if(e.key === 'ArrowRight'){
+                    showImage(currentIndex + 1);
+                }else if(e.key === 'ArrowLeft'){
+                    showImage(currentIndex - 1);
+                }else if(e.key === 'Escape'){
+                    closeLightbox();
+                }
+            }
+        });
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if(e.target.id === 'lightbox'){
+                closeLightbox();
+            }
+        })
+    </script>
+</body>
+</html>
