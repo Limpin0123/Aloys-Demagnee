@@ -152,6 +152,35 @@ footer .contact-container a{
     cursor: pointer;
 }
 
+.header-lang-select {
+    width: fit-content;
+    height: calc(100% - 10px);
+    padding: 0 10px 0 10px;
+    margin: 5px 5px 5px 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+.header-lang-select div{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 100%;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+.lang-fr {
+    background-image: url(../img/fr-flag.png);
+}
+.lang-en {
+    background-image: url(../img/eng-flag.png);
+}
+
 /*---------- Footer ----------*/
 
 footer{
@@ -187,6 +216,32 @@ footer .contact-container h2{
         flex-direction: column;
         margin: 0;
         background-color: var(--header-background-color);
+    }
+    .header-page-navigation .tools{
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+    }
+    .header-lang-select {
+        height: 100%;
+        padding: 0 10px 0 10px;
+        margin: 0px 5px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 10px;
+    }
+    .header-lang-select div{
+        height: 100%;
+        aspect-ratio: 1 / 1;
+
+        border-radius: 100%;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        cursor: pointer;
     }
 
     .show-on-pc-layout{

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="CSS/about-me.css">
 </head>
 
-<body>
+<body data-page="index">
     <header>
         <div class="header-main">
             <section class="logo-title-section">
@@ -36,14 +36,18 @@
             <nav class="header-page-navigation show-on-pc-layout">
                 <div class="vertical-bar"></div>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#Portfolio-section">Portfolio</a></li>
-                    <li><a href="#About-me-section">À propos</a></li>
+                    <li><a href="index.html" data-i18n="header_nav_home">Accueil</a></li>
+                    <li><a href="#Portfolio-section" data-i18n="header_nav_portfolio">Portfolio</a></li>
+                    <li><a href="#About-me-section" data-i18n="header_nav_about">À propos</a></li>
                 </ul>
-            </nav>        
+                <div class="header-lang-select show-on-pc-layout">
+                    <div class="vertical-bar"></div>
+                    <div class="lang-fr" id="button-fr"></div>
+                <div class="lang-en" id="button-en"></div>
+            </div>
+            </nav>         
 
             <div class="header-main-sm">
-
                 <a class="sm-logo-gh" target="_blank" href="https://github.com/Limpin0123"></a>
                 <a class="sm-logo-li" href="#"></a> <!--ajouter target="_blank" quand le compte linkedin sera créé-->
 
@@ -52,11 +56,17 @@
         <!--Ne pas oublier d'update la deuxième navigation barre avec la 1er-->
         <nav class="header-page-navigation show-on-mobile-layout">
                 <div class="horizontale-bar"></div>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#Portfolio-section">Portfolio</a></li>
-                    <li><a href="#About-me-section">À propos</a></li>
-                </ul>
+                <div class="tools">
+                    <ul>
+                        <li><a href="index.html" data-i18n="header_nav_home">Accueil</a></li>
+                        <li><a href="#Portfolio-section" data-i18n="header_nav_portfolio">Portfolio</a></li>
+                        <li><a href="#About-me-section" data-i18n="header_nav_about">À propos</a></li>
+                    </ul>
+                    <div class="header-lang-select">
+                        <div class="vertical-bar"></div>
+                        <div class="lang-fr" id="button-fr"></div>
+                    <div class="lang-en" id="button-en"></div>
+                </div>
             </nav>  
     </header>
 
@@ -301,10 +311,11 @@
     </section>
     <footer>
         <div class="contact-container">
-            <h2>Me contacter :</h2>
+            <h2 data-i18n="footer_contact">Me contacter :</h2>
             <a href="mailto:demagnee.aloys@gmail.com" class="sm-logo-mail"></a>
             <a href="#" class="sm-logo-li"></a>
         </div>
     </footer>
 </body>
+<script src="./JavaScript/Language.js"></script>
 </html>
