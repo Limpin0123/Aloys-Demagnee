@@ -1,1 +1,57 @@
-{}
+{
+    "HS_Name": "Aloys Demagnée, Game Programming",
+    "HS_Presentation": "Hello, my name is Aloys Demagnée, I am a Game Programmer always looking for new challenges. <br><br>Welcome to my Portfolio!",
+
+    "HS_Team": "Teamwork",
+    "HS_Team_Quote": "«&nbsp;None of us acting alone can achieve success&nbsp;»",
+    "HS_Team_Quote_Author": "<br>—— Nelson Mandela",
+
+    "HS_Metho": "Methodo&shy;logy",
+    "HS_Metho_Quote": "«&nbsp;Diligence always overcomes obstacles&nbsp;»",
+    "HS_Metho_Quote_Author": "<br>—— Leonardo da Vinci",
+
+
+    "School_Project": "School Projects :",
+
+    "SP_WD_Time": "5 months",
+    "SP_WD_Title": "Withering Depths",
+    "SP_WD_Pitch": "Withering Depths is a <strong>2D platformer</strong> built around an imposed theme \"<strong>Unfair</strong>\". Its gameplay mixes both <strong>puzzle</strong> and <strong>platforming</strong> elements. <br>This is the <strong>first long-term project I completed</strong>. Developed in Unity using C#, it allowed me to learn both the engine and the language. <br>Thanks to this project, I discovered the <strong>production pipeline of a game</strong>, from its conception to its completion.",
+
+    "SP_Modulo_Time": "4 months",
+    "SP_Modulo_Title":"Modulo",
+    "SP_Modulo_Pitch":"Modulo is a <strong>Tower Defense</strong> game, that puts the player's <strong>adaptability</strong> and <strong>strategy</strong> to the test against waves of enemies growing in strength and number. <br>This Unity project, made in C#, allowed me to learn some <strong>key concepts of object-oriented programming</strong> while <strong>strengthening my knowledge</strong> in this field.",
+
+
+    "SP_Munir_Time": "4 months",
+    "SP_Munir_Title": "Munir : in a lamp",
+    "SP_Munir_Pitch": "Munir is a <strong>3D Puzzle-Adventure game</strong> combining <strong>puzzle</strong> phases and <strong>haptic</strong> challenges in a dreamlike universe inspired by the <strong>the mythologies of the Arab world</strong>. <br>Through this first 3D project, I discovered the <strong>basics of tooling</strong> and worked on <strong>custom physics programming</strong> through an atypical controller. I also learned to work in a <strong>larger team</strong> and therefore to delegate tasks.",
+
+
+    "Personal_Project": "Personal Projects :",
+
+    "PP_Avaiki_Time": "3 months",
+    "PP_Avaiki_Title": "The Trial of Avaiki",
+    "PP_Avaiki_Pitch": "The Trial of Avaiki is a <strong>competitive online deck-building</strong> game, using <strong>peer-to-peer</strong> technology. A round is divided into two phases : <br>A Preparation phase, where the player <strong>organizes their board</strong> by buying and merging cards. <br>A combat phase where they face their opponent in <strong>turn-based</strong> fights.",
+
+    "About_Me": "About me :",
+    "AM_Presentation_Title": "Presentation",
+    "AM_Presentation_Text": "Hello, my name is Aloys and I am 20 years old and am currently studying game programming at <strong>Rubika Valenciennes</strong>(France). My passion for coding started at the age of 12 with Scratch, a visual programming language that taught me the basics of programming. Since then, <strong>I have constantly experimented </strong> with new programs, some more concrete than others.",
+
+    "Passion_Title": "Passion and Approach",
+    "Passion_Text": "What I enjoy in programming is turning <strong>complex problems</strong> into <strong>simple solutions</strong>, while aiming for a <strong>clean</strong> and <strong>polished</strong> project. In my opinion, a good programmer is someone who remains <strong>curious</strong> and in <strong>constant learning</strong>.",
+
+    "Why_Title": "Why video games?",
+    "Why_Text": "Because I have always loved to <strong>dive into universes</strong> and <strong>tell immersive stories</strong>. A game like \"<strong>Five Nights at Freddy's</strong>\", which I've followed since my childhood, has always amazed me with its ability to tell stories by <strong>hiding the essentials in the details</strong> and its atmosphere.",
+
+
+    "Skills": "Skills :",
+
+    "Skill_1": "Diligence",
+    "Skill_2": "Continuous learning",
+    "Skill_3": "Communication",
+    "Skill_4": "Autonomy",
+    "Skill_5": "Adaptability",
+    "Skill_6": "Simplification of technical aspects",
+
+    "Background": "Background :"
+}

@@ -1,1 +1,56 @@
-{}
+{
+    "HS_Name": "Aloys Demagnée, Game Programming",
+    "HS_Presentation": "Bonjour, je m'appelle Aloys Demagnée, Je suis un Game Programmeur toujours à la recherche de nouveaux défis. <br><br>Bienvenue sur mon portfolio !",
+
+    "HS_Team": "Travail d'équipe",
+    "HS_Team_Quote": "«&nbsp;Aucun de nous, en agissant seul, ne peut atteindre le succès&nbsp;»",
+    "HS_Team_Quote_Author": "<br>—— Nelson Mandela",
+
+    "HS_Metho": "Méthodo&shy;logie",
+    "HS_Metho_Quote": "«&nbsp;La rigueur vient toujours à bout de l’obstacle&nbsp;»",
+    "HS_Metho_Quote_Author": "<br>—— Léonard de Vinci",
+
+
+    "School_Project": "Projets d'étude :",
+
+    "SP_WD_Time": "5 mois",
+    "SP_WD_Title": "Withering Depths",
+    "SP_WD_Pitch": "Withering Depths est un jeu de <strong>plateforme 2D</strong> sur le thème imposé \"<strong>Unfair</strong>\". Son gameplay combine à la fois des éléments de <strong>puzzle</strong> et de <strong>plateforme</strong>. <br>C'est le <strong>premier projet que j'ai mené à terme</strong> avec une production longue et complète. Développé sous Unity en C#, il m'a permis d'apprendre à la fois le moteur et le langage. <br>Grâce à ce projet, j'ai découvert la <strong>pipeline de production d'un jeu</strong>, de sa conception jusqu'à sa finalisation.",
+
+    "SP_Modulo_Time": "4 mois",
+    "SP_Modulo_Title":"Modulo",
+    "SP_Modulo_Pitch":"Modulo est un jeu de <strong>Tower Defense</strong>, mettant à l'épreuve l'<strong>adaptabilité</strong> et la <strong>stratégie</strong> du joueur face à des vagues d'ennemis de plus en plus nombreuses. <br>Ce projet, réalisé sur Unity en C#, m'a permis de découvrir certains <strong>concepts clefs de la programmation orientée objet</strong> tout en <strong>consolidant mes connaissances</strong> générales dans ce domaine.",
+
+    "SP_Munir_Time": "4 mois",
+    "SP_Munir_Title": "Munir : in a lamp",
+    "SP_Munir_Pitch": "Munir est un jeu de <strong>Puzzle Adventure en 3D</strong> mêlant phases d'<strong>énigmes</strong> et épreuves <strong>haptiques</strong> dans un univers onirique inspiré des <strong>mythologies du monde arabe</strong>. <br>Grâce à ce premier projet en 3D, j'ai pu découvrir les <strong>bases du tooling</strong> et m'exercer à la programmation d'une <strong>physique personnalisée</strong> à travers un contrôleur atypique. J'ai également appris à travailler dans une <strong>équipe plus grande</strong>, et donc à déléguer certaines tâches.",
+
+
+    "Personal_Project": "Projets personnels :",
+
+    "PP_Avaiki_Time": "3 mois",
+    "PP_Avaiki_Title": "L'Epreuve d'Avaiki",
+    "PP_Avaiki_Pitch": "L'Epreuve d'Avaiki est un jeu de <strong>deck-building compétitif en multijoueur</strong>, fonctionnant en <strong>peer-to-peer</strong>. Une partie se divise en deux phases : <br> Une première phase de préparation pendant laquelle le joueur <strong>prépare son plateau</strong> en achetant et fusionnant des cartes. <br> Une seconde phase durant laquelle il affronte son adversaire dans des <strong>combats au tour par tour</strong>.",
+
+    "About_Me": "À propos de moi :",
+    "AM_Presentation_Title": "Présentation",
+    "AM_Presentation_Text": "Bonjour, je m'appelle Aloys, j'ai 20 ans et je suis actuellement en étude de game programming à <strong>Rubika Valenciennes</strong> (France). Ma passion pour le code a commencé dès mes 12 ans avec Scratch, un langage visuel qui m'a appris les bases de la programmation. Depuis, <strong>j'expérimente sans cesse</strong> de nouveaux programmes, concrets ou parfois plus abstraits.",
+
+    "Passion_Title": "Passion et Approche",
+    "Passion_Text": "Ce que j'aime dans la programmation, c'est de transformer des <strong>problèmes complexes</strong> en <strong>solutions simples</strong>, tout en visant un projet <strong>propre</strong> et <strong>abouti</strong>. Selon moi, un bon programmeur est quelqu'un qui sait rester <strong>curieux</strong> et en <strong>apprentissage constant</strong>.",
+
+    "Why_Title": "Pourquoi le jeu vidéo ?",
+    "Why_Text": "Car j'ai toujours aimé me <strong>plonger dans des univers</strong> et <strong>raconter des histoires</strong> immersives. Un jeu comme \"<strong>Five Nights at Freddy's</strong>\", que je suis depuis l'enfance, m'a toujours impressionné par sa manière de raconter des histoires en cachant <strong>l'essentiel dans les détails</strong> et l'ambiance.",
+
+
+    "Skills": "Compétences :",
+
+    "Skill_1": "Rigueur",
+    "Skill_2": "Apprentissage continu",
+    "Skill_3": "Communication",
+    "Skill_4": "Autonomie",
+    "Skill_5": "Adaptabilité",
+    "Skill_6": "Vulgarisation d'aspects technique",
+
+    "Background": "Parcours :"
+}
