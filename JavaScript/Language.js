@@ -1,7 +1,12 @@
 function loadLanguage(lang) {
-    Promise.all([
-        fetch(`./Json/lang/${lang}/HeaderFooterJson.json`).then(r => r.json()),
-        fetch(`./Json/lang/${lang}/${document.body.dataset.page}.json`).then(r => r.json())//body must be like => <body data-page="nameOfTheJson">
+  const isInHtmlFolder = window.location.pathname.includes("/HTML/");
+  const basePath = isInHtmlFolder ? `../Json/lang/${lang}/` : `./Json/lang/${lang}/`;
+
+  const page = document.body.dataset.page;
+  
+  Promise.all([
+        fetch(`${basePath}HeaderFooterJson.json`).then(r => r.json()),
+        fetch(`${basePath}${page}.json`).then(r => r.json())//body must be like => <body data-page="nameOfTheJson">
     ])
     .then(([HeaderFooter, pageData]) => {
         const translations = {...HeaderFooter, ...pageData};
