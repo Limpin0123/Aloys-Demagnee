@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../CSS/projet.css">
 </head>
 
-<body>
+<body data-page="Modulo">
     <header>
         <div class="header-main">
             <section class="logo-title-section">
@@ -34,14 +34,18 @@
             <nav class="header-page-navigation show-on-pc-layout">
                 <div class="vertical-bar"></div>
                 <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
-                    <li><a href="../index.html#About-me-section">À propos</a></li>
+                    <li><a href="../index.html" data-i18n="header_nav_home">Accueil</a></li>
+                    <li><a href="../index.html#Portfolio-section" data-i18n="header_nav_portfolio">Portfolio</a></li>
+                    <li><a href="../index.html#About-me-section" data-i18n="header_nav_about">À propos</a></li>
                 </ul>
-            </nav>        
+                <div class="header-lang-select show-on-pc-layout">
+                    <div class="vertical-bar"></div>
+                    <div class="lang-fr" id="button-fr"></div>
+                <div class="lang-en" id="button-en"></div>
+            </div>
+            </nav>         
 
             <div class="header-main-sm">
-
                 <a class="sm-logo-gh" target="_blank" href="https://github.com/Limpin0123"></a>
                 <a class="sm-logo-li" href="#"></a> <!--ajouter target="_blank" quand le compte linkedin sera créé-->
 
@@ -50,18 +54,24 @@
         <!--Ne pas oublier d'update la deuxième navigation barre avec la 1er-->
         <nav class="header-page-navigation show-on-mobile-layout">
                 <div class="horizontale-bar"></div>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
-                    <li><a href="../index.html#About-me-section">À propos</a></li>
-                </ul>
+                <div class="tools">
+                    <ul>
+                        <li><a href="../index.html" data-i18n="header_nav_home">Accueil</a></li>
+                        <li><a href="../index.html#Portfolio-section" data-i18n="header_nav_portfolio">Portfolio</a></li>
+                        <li><a href="../index.html#About-me-section" data-i18n="header_nav_about">À propos</a></li>
+                    </ul>
+                    <div class="header-lang-select">
+                        <div class="vertical-bar"></div>
+                        <div class="lang-fr" id="button-fr"></div>
+                    <div class="lang-en" id="button-en"></div>
+                </div>
             </nav>  
     </header>
 
     <section class="project-container">
         <div class="project-title">
             <img src="../Ressources/Modulo/Logo.png" alt="logo of the project">
-            <h1>Modulo</h1>
+            <h1 data-i18n="Title">Modulo</h1>
         </div>
         <div class="project-first-description">
             <div class="project-video-section">
@@ -70,21 +80,21 @@
                 </video>
                 <div class="project-icon-info">
                     <img src="../img/time-logo.png" alt="time logo">
-                    <p>4 mois</p>
+                    <p data-i18n="Months">4 mois</p>
                     <img src="../img/team-logo.png" alt="team logo">
                     <p>4</p>
                     <img src="../img/language-logo.png" alt="programming language logo">
                     <p>C#</p>
                     <div class="role-info">
                         <img src="../img/role-logo.png" alt="role in team logo">
-                        <p>Programmeur seul</p>
+                        <p data-i18n="Role">Programmeur seul</p>
                     </div>
                 </div>
             </div>
             <div class="project-side-info">
                 <div>
-                    <h2>Pitch & fiche signalétique :</h2>
-                    <p>
+                    <h2 data-i18n="Pitch_Title">Pitch & fiche signalétique :</h2>
+                    <p data-i18n="Pitch_Text">
                         Plongez dans le monde de Sylva et incarnez le <strong>dernier rempart des Automates</strong>.
                         Placez des <strong>tours défensives</strong> et améliorez-les grâce à des <strong>modules spécialisés</strong> pour repousser
                         l'invasion des "Acris", une menace mystérieuse.
@@ -95,8 +105,8 @@
                     </p>
                 </div>
                 <div>
-                    <h2>En bref :</h2>
-                    <p>
+                    <h2 data-i18n="SumUp_Title">En bref :</h2>
+                    <p data-i18n="SumUp_Text">
                         Modulo est un projet dans lequel j'ai pu apprendre à <strong>hiérarchiser des tâches</strong> et à <strong>gérer
                         efficacement un scope</strong> dans un laps de temps restreint.
                         <br><br>Ce fut également une première approche de certains <strong>concepts primordiaux
@@ -109,8 +119,8 @@
         </div>
 
         <div class="project-learnings">
-            <h2>Mes réalisations sur le projet :</h2>
-            <p>
+            <h2 data-i18n="Realisation_Title">Mes réalisations sur le projet :</h2>
+            <p data-i18n="Realisation_Text">
                 Étant majoritairement le seul programmeur de l'équipe, j'ai pris en charge tous les aspects
                 de la <strong>programmation</strong>, tout en endossant également le rôle de <strong>game designer</strong> sur
                 ce projet. Voici les points clefs de ce projet :
@@ -142,8 +152,8 @@
         </div>
 
         <div class="project-learnings">
-            <h2>Axes d'Amélioration :</h2>
-            <p>
+            <h2 data-i18n="Amelioration_Title">Axes d'Amélioration :</h2>
+            <p data-i18n="Amelioration_Text">
                 Bien que le principe de polymorphisme ait été utilisé pour certains aspects du jeu, il
                 aurait <strong>pu être exploité plus largement</strong>, notamment pour la mise en place des
                 modules qui auraient pu dériver d'une classe "<code>Module</code>" avec une méthode polymorphe
@@ -159,7 +169,7 @@
         </div>
 
         <div class="project-gallery">
-            <h2>Galerie :</h2>
+            <h2 data-i18n="Galery">Galerie :</h2>
             <div class="gallery-area">
                 <img src="../Ressources/Modulo/spawning-demo.gif" alt="spawning demo">
                 <img src="../Ressources/Modulo/Sprinter.png" alt="Sprinter">
@@ -191,7 +201,7 @@
 
     <footer>
         <div class="contact-container">
-            <h2>Me contacter :</h2>
+            <h2 data-i18n="footer_contact">Me contacter :</h2>
             <a href="mailto:demagnee.aloys@gmail.com" class="sm-logo-mail"></a>
             <a href="#" class="sm-logo-li"></a>
         </div>
@@ -247,4 +257,5 @@
         })
     </script>
 </body>
+<script src="./JavaScript/Language.js"></script>
 </html>

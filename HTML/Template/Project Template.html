@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../CSS/projet.css">
 </head>
 
-<body>
+<body data-page="Template"><!--Change Page Name Here-->
     <header>
         <div class="header-main">
             <section class="logo-title-section">
@@ -34,14 +34,18 @@
             <nav class="header-page-navigation show-on-pc-layout">
                 <div class="vertical-bar"></div>
                 <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
-                    <li><a href="../index.html#About-me-section">À propos</a></li>
+                    <li><a href="../index.html" data-i18n="header_nav_home">Accueil</a></li>
+                    <li><a href="../index.html#Portfolio-section" data-i18n="header_nav_portfolio">Portfolio</a></li>
+                    <li><a href="../index.html#About-me-section" data-i18n="header_nav_about">À propos</a></li>
                 </ul>
-            </nav>        
+                <div class="header-lang-select show-on-pc-layout">
+                    <div class="vertical-bar"></div>
+                    <div class="lang-fr" id="button-fr"></div>
+                <div class="lang-en" id="button-en"></div>
+            </div>
+            </nav>         
 
             <div class="header-main-sm">
-
                 <a class="sm-logo-gh" target="_blank" href="https://github.com/Limpin0123"></a>
                 <a class="sm-logo-li" href="#"></a> <!--ajouter target="_blank" quand le compte linkedin sera créé-->
 
@@ -50,18 +54,24 @@
         <!--Ne pas oublier d'update la deuxième navigation barre avec la 1er-->
         <nav class="header-page-navigation show-on-mobile-layout">
                 <div class="horizontale-bar"></div>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
-                    <li><a href="../index.html#About-me-section">À propos</a></li>
-                </ul>
+                <div class="tools">
+                    <ul>
+                        <li><a href="../index.html" data-i18n="header_nav_home">Accueil</a></li>
+                        <li><a href="../index.html#Portfolio-section" data-i18n="header_nav_portfolio">Portfolio</a></li>
+                        <li><a href="../index.html#About-me-section" data-i18n="header_nav_about">À propos</a></li>
+                    </ul>
+                    <div class="header-lang-select">
+                        <div class="vertical-bar"></div>
+                        <div class="lang-fr" id="button-fr"></div>
+                    <div class="lang-en" id="button-en"></div>
+                </div>
             </nav>  
     </header>
 
     <section class="project-container">
         <div class="project-title">
             <img src="../img/logo-limpin-small.png" alt="logo of the project">
-            <h1>Titre du projet</h1>
+            <h1 data-i18n="Title">Titre du projet</h1>
         </div>
         <div class="project-first-description">
             <div class="project-video-section">
@@ -70,41 +80,41 @@
                 </video>
                 <div class="project-icon-info">
                     <img src="../img/time-logo.png" alt="time logo">
-                    <p>X mois</p>
+                    <p data-i18n="Months">X mois</p>
                     <img src="../img/team-logo.png" alt="team logo">
                     <p>X</p>
                     <img src="../img/language-logo.png" alt="programming language logo">
                     <p>X</p>
                     <div class="role-info">
                         <img src="../img/role-logo.png" alt="role in team logo">
-                        <p>X</p>
+                        <p data-i18n="Role">X</p>
                     </div>
                 </div>
             </div>
             <div class="project-side-info">
                 <div>
-                    <h2>Pitch & fiche signalétique :</h2>
-                    <p>Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
+                    <h2 data-i18n="Pitch_Title">Pitch & fiche signalétique :</h2>
+                    <p data-i18n="Pitch_Text">Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
                 </div>
                 <div>
-                    <h2>En bref :</h2>
-                    <p>Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
+                    <h2 data-i18n="SumUp_Title">En bref :</h2>
+                    <p data-i18n="SumUp_Text">Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
                 </div>
             </div>
         </div>
 
         <div class="project-learnings">
-            <h2>Mes réalisations sur le projet :</h2>
-            <p>Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
+            <h2 data-i18n="Realisation_Title">Mes réalisations sur le projet :</h2>
+            <p data-i18n="Realisation_Text">Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
         </div>
 
         <div class="project-learnings">
-            <h2>Axes d'Amélioration :</h2>
-            <p>Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
+            <h2 data-i18n="Amelioration_Title">Axes d'Amélioration :</h2>
+            <p data-i18n="Amelioration_Text">Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
         </div>
 
         <div class="project-gallery">
-            <h2>Galerie :</h2>
+            <h2 data-i18n="Galery">Galerie :</h2>
             <div class="gallery-area">
                 <img src="../img/No-Thumbnail.png" alt="no thumbnail">
                 <img src="../img/No-Thumbnail.png" alt="no thumbnail">
@@ -125,7 +135,7 @@
 
     <footer>
         <div class="contact-container">
-            <h2>Me contacter :</h2>
+            <h2 data-i18n="footer_contact">Me contacter :</h2>
             <a href="mailto:demagnee.aloys@gmail.com" class="sm-logo-mail"></a>
             <a href="#" class="sm-logo-li"></a>
         </div>
@@ -181,4 +191,5 @@
         })
     </script>
 </body>
+<script src="./JavaScript/Language.js"></script>
 </html>

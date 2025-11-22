@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../CSS/projet.css">
 </head>
 
-<body>
+<body data-page="Avaiki">
     <header>
         <div class="header-main">
             <section class="logo-title-section">
@@ -34,14 +34,18 @@
             <nav class="header-page-navigation show-on-pc-layout">
                 <div class="vertical-bar"></div>
                 <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
-                    <li><a href="../index.html#About-me-section">À propos</a></li>
+                    <li><a href="../index.html" data-i18n="header_nav_home">Accueil</a></li>
+                    <li><a href="../index.html#Portfolio-section" data-i18n="header_nav_portfolio">Portfolio</a></li>
+                    <li><a href="../index.html#About-me-section" data-i18n="header_nav_about">À propos</a></li>
                 </ul>
-            </nav>        
+                <div class="header-lang-select show-on-pc-layout">
+                    <div class="vertical-bar"></div>
+                    <div class="lang-fr" id="button-fr"></div>
+                <div class="lang-en" id="button-en"></div>
+            </div>
+            </nav>         
 
             <div class="header-main-sm">
-
                 <a class="sm-logo-gh" target="_blank" href="https://github.com/Limpin0123"></a>
                 <a class="sm-logo-li" href="#"></a> <!--ajouter target="_blank" quand le compte linkedin sera créé-->
 
@@ -50,18 +54,24 @@
         <!--Ne pas oublier d'update la deuxième navigation barre avec la 1er-->
         <nav class="header-page-navigation show-on-mobile-layout">
                 <div class="horizontale-bar"></div>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../index.html#Portfolio-section">Portfolio</a></li>
-                    <li><a href="../index.html#About-me-section">À propos</a></li>
-                </ul>
+                <div class="tools">
+                    <ul>
+                        <li><a href="../index.html" data-i18n="header_nav_home">Accueil</a></li>
+                        <li><a href="../index.html#Portfolio-section" data-i18n="header_nav_portfolio">Portfolio</a></li>
+                        <li><a href="../index.html#About-me-section" data-i18n="header_nav_about">À propos</a></li>
+                    </ul>
+                    <div class="header-lang-select">
+                        <div class="vertical-bar"></div>
+                        <div class="lang-fr" id="button-fr"></div>
+                    <div class="lang-en" id="button-en"></div>
+                </div>
             </nav>  
     </header>
 
     <section class="project-container">
         <div class="project-title">
             <img src="../Ressources/Epreuve-Avaiki/logo.png" alt="logo of the project">
-            <h1>L'Epreuve d'Avaiki</h1>
+            <h1 data-i18n="Title">L'Epreuve d'Avaiki</h1>
         </div>
         <div class="project-first-description">
             <div class="project-video-section">
@@ -70,21 +80,21 @@
                 </video>
                 <div class="project-icon-info">
                     <img src="../img/time-logo.png" alt="time logo">
-                    <p>3 mois</p>
+                    <p data-i18n="Months">3 mois</p>
                     <img src="../img/team-logo.png" alt="team logo">
                     <p>5</p>
                     <img src="../img/language-logo.png" alt="programming language logo">
                     <p>C#</p>
                     <div class="role-info">
                         <img src="../img/role-logo.png" alt="role in team logo">
-                        <p>Deux programmeurs</p>
+                        <p data-i18n="Role">Deux programmeurs</p>
                     </div>
                 </div>
             </div>
             <div class="project-side-info">
                 <div>
-                    <h2>Pitch & fiche signalétique:</h2>
-                    <p>Prisonnier d’Avaiki, la grotte originelle, <strong>affrontez les autres divinités</strong>
+                    <h2 data-i18n="Pitch_Title">Pitch & fiche signalétique:</h2>
+                    <p data-i18n="Pitch_Text">Prisonnier d’Avaiki, la grotte originelle, <strong>affrontez les autres divinités</strong>
                         en <strong>créant des hybrides</strong> qui peupleront le nouveau monde. 
                         <br><br>
                         L'Epreuve d'Avaiki est un jeu de <strong>deck-building compétitif multijoueur</strong>,
@@ -94,8 +104,8 @@
                     </p>
                 </div>
                 <div>
-                    <h2>En bref :</h2>
-                    <p>
+                    <h2 data-i18n="SumUp_Title">En bref :</h2>
+                    <p data-i18n="SumUp_Text">
                         L'Epreuve d'Avaiki est mon premier projet d'envergure que j'ai réalisé
                         <strong>en dehors du cadre de mes études</strong>. Cela a entrainer
                         de <strong>nombreux défis</strong> comme l'<strong>organisation</strong>
@@ -113,8 +123,8 @@
         </div>
 
         <div class="project-learnings">
-            <h2>Mes réalisations sur le projet :</h2>
-            <p>
+            <h2 data-i18n="Realisation_Title">Mes réalisations sur le projet :</h2>
+            <p data-i18n="Realisation_Text">
                 Lors de ce projet, j'ai pris le rôle de <strong>lead programmeur</strong> afin de coordonner
                 le découpage des tâches. Voici mes principales réalisations :
                 <br><br>• <strong>Gestion d'une équipe réduite</strong> : Au lancement du projet, nous étions <strong>quatre 
@@ -151,8 +161,8 @@
         </div>
 
         <div class="project-learnings">
-            <h2>Axes d'Amélioration :</h2>
-            <p> 
+            <h2 data-i18n="Amelioration_Title">Axes d'Amélioration :</h2>
+            <p data-i18n="Amelioration_Text"> 
                 Pour pallier au problème de désistement, nous avons tenté à plusieurs reprises d'intégrer
                 de nouveaux membres en cours de production. Cependant, <strong>cette intégration n'a pas été bien
                 maîtrisée</strong> et il était <strong>difficile de transmettre efficacement</strong> l'état actuel du projet,
@@ -169,7 +179,7 @@
         </div>
 
         <div class="project-gallery">
-            <h2>Galerie :</h2>
+            <h2 data-i18n="Galery">Galerie :</h2>
             <div class="gallery-area">
                 <video controls><source src="../Ressources/Epreuve-Avaiki/demo.mp4"></video>
                 <img src="../Ressources/Epreuve-Avaiki/shop.png" alt="shop of the game">
@@ -191,7 +201,7 @@
 
     <footer>
         <div class="contact-container">
-            <h2>Me contacter :</h2>
+            <h2 data-i18n="footer_contact">Me contacter :</h2>
             <a href="mailto:demagnee.aloys@gmail.com" class="sm-logo-mail"></a>
             <a href="#" class="sm-logo-li"></a>
         </div>
@@ -247,4 +257,5 @@
         })
     </script>
 </body>
+<script src="./JavaScript/Language.js"></script>
 </html>
