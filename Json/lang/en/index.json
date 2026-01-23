@@ -21,10 +21,13 @@
     "SP_Modulo_Title":"Modulo",
     "SP_Modulo_Pitch":"Modulo is a <strong>Tower Defense</strong> game, that puts the player's <strong>adaptability</strong> and <strong>strategy</strong> to the test against waves of enemies growing in strength and number. <br>This Unity project, made in C#, allowed me to learn some <strong>key concepts of object-oriented programming</strong> while <strong>strengthening my knowledge</strong> in this field.",
 
-
     "SP_Munir_Time": "4 months",
     "SP_Munir_Title": "Munir : in a lamp",
     "SP_Munir_Pitch": "Munir is a <strong>3D Puzzle-Adventure game</strong> combining <strong>puzzle</strong> phases and <strong>haptic</strong> challenges in a dreamlike universe inspired by the <strong>the mythologies of the Arab world</strong>. <br>Through this first 3D project, I discovered the <strong>basics of tooling</strong> and worked on <strong>custom physics programming</strong> through an atypical controller. I also learned to work in a <strong>larger team</strong> and therefore to delegate tasks.",
+
+    "SP_Rubikards_Time": "4 months",
+    "SP_Rubikards_Title": "Rubikards",
+    "SP_Rubikards_Pitch": "Rubikards is a <strong>collectible card game</strong> mixing an <strong>incremental idle game</strong> gameplay with a <strong>community</strong> aspect. This project aimed to simulate a <strong>professional workflow</strong>, with our school acting as the client. Working on this project taught me another aspect of <strong>network programming</strong> and <strong>database</strong> management, as well as <strong>more advanced production pipeline</strong> and the basics of <strong>working with a client</strong>",
 
 
     "Personal_Project": "Personal Projects :",

@@ -35,10 +35,10 @@
     filter: grayscale(0%);
 }
 .portfolio-project-box:hover .portfolio-project-image-section{
-    height: 60%;
+    height: 40%;
 }
 .portfolio-project-box:hover .portfolio-project-info{
-    height: 40%;
+    height: 60%;
 }
 
 .portfolio-project-image-section{
