@@ -23,7 +23,13 @@ function loadLanguage(lang) {
 document.addEventListener("DOMContentLoaded", () => {
   loadLanguage("fr");
 
-  document.getElementById("button-fr").addEventListener("click", () => loadLanguage("fr"));
-  document.getElementById("button-en").addEventListener("click", () => loadLanguage("en"));
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const lang = btn.dataset.lang;
+      loadLanguage(lang);
+    });
+  });
+  //document.getElementById("button-fr").addEventListener("click", () => loadLanguage("fr"));
+  //document.getElementById("button-en").addEventListener("click", () => loadLanguage("en"));
 });
 //Page must include the line : <script src="./JavaScript/Language.js"></script>
