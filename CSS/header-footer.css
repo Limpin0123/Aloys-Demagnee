@@ -115,7 +115,7 @@ footer .contact-container a{
     height: calc(100% - 10px);
 
 }
-.header-main-sm a:not(.sm-logo-li):hover{ /*remove not when linkedin account created*/
+.header-main-sm a:hover{
     height: 100%;
     transition: 200ms;
 }
@@ -138,8 +138,7 @@ footer .contact-container a{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    /*cursor: pointer;*/
-    filter: grayscale(100%);
+    cursor: pointer;
 }
 .sm-logo-mail {
     height: 100%;
